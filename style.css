@@ -1,0 +1,460 @@
+@import url(https://db.onlinewebfonts.com/c/67137b5f6928edc941186baaab5a664b?family=Lemon%2FMilk);
+
+body{
+    font-family: "Lemon/Milk";
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+}
+
+.banner{
+    background-image: url(back1.jpg);
+    background-size: cover;
+    width: 55vw;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.header h1{
+    color: #d5d6db;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.location{
+    color: #d5d6db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.location h5{
+    margin-bottom: 0px;
+    font-weight: lighter;
+}
+
+.location p{
+    font-weight: lighter;
+}
+
+.search{
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background-image: url(search2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    transition: ease-in-out 1s;
+}
+
+button:hover{
+    background-image: url(search1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: fit-content;
+}
+
+.inputs{
+    font-family: "Lemon/Milk";
+    width: 13rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: 3px solid #d2d2d2;
+    color: white;
+    border-radius: 1rem;
+    padding: 0rem 0.7rem;
+    font-size: large;
+    outline: none;
+    font-weight: lighter;
+}
+
+input[type=text]:focus{
+    border: 3px solid white;
+}
+
+::placeholder { 
+    color: white;
+    opacity: 0.5;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 45vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1{
+    background-image: linear-gradient(to right, #1891f9, #126ab2, #126ab2, #1891f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    font-size: 2.5rem;
+}
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 45%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    background-image: linear-gradient(to bottom right, #1891f9, #126ab2, #126ab2, #1891f9);
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cicon{
+    width: 30%;
+    height: 70%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.cicon img{
+    width: 12rem;
+}
+
+.cdata{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cdata h2{
+    font-size: 1.7rem;
+    font-weight: lighter;
+    color: white;
+}
+
+.cards2{
+    background-image: linear-gradient(to bottom right, #1891f9, #126ab2, #126ab2, #1891f9);
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.smol{
+    padding: 0px 5px;
+    border: 5px solid #d5d6db;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1400px){
+    body {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .banner{
+        background-size: cover;
+        width: auto;
+        height: auto;
+    }
+
+    .search{
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content{
+        height: auto;
+        width: 100vw;
+        justify-content: space-around;
+    }
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .sections{
+        width: 60%;
+        height: 45vh;
+    }
+    
+    .cards{
+        height: 35vh;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .cicon img{
+        width: 12rem;
+    }
+
+    .cards2{
+        height: 35vh;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    body {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .banner{
+        background-size: cover;
+        width: auto;
+        height: auto;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .header h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .location img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .location h5{
+        font-size: smaller;
+        margin-bottom: 0px;
+        font-weight: lighter;
+    }
+    
+    .location p{
+        font-size: smaller;
+        font-weight: lighter;
+    }
+
+    form{
+        flex-direction: column;
+    }
+
+    .inputs{
+        width: 15rem;
+        height: 2rem;
+    }
+
+    .content{
+        height: auto;
+        width: 100vw;
+        justify-content: space-around;
+    }
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .sections{
+        width: 80vw;
+        height: auto;
+    }
+    
+    .cards{
+        height: 40vh;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cicon{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        width: 70%;
+    }
+
+    .cicon img{
+        width: 10rem;
+    }
+
+    .cdata{
+        height: 60%;
+        width: 70%;
+    }
+    
+    .cdata h2{
+        font-size: 1.2rem;
+        font-weight: lighter;
+        color: white;
+    }
+    
+    .cards2{
+        height: 100vh;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .smol{
+        width: 50%;
+        padding: 0px 5px;
+        border: 5px solid #d5d6db;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    body {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .banner{
+        background-size: cover;
+        width: auto;
+        height: auto;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .header h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .location img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .location h5{
+        font-size: smaller;
+        margin-bottom: 0px;
+        font-weight: lighter;
+    }
+    
+    .location p{
+        font-size: smaller;
+        font-weight: lighter;
+    }
+
+    form{
+        flex-direction: column;
+    }
+
+    .inputs{
+        width: 15rem;
+        height: 2rem;
+    }
+
+    .content{
+        height: auto;
+        width: 100vw;
+        justify-content: space-around;
+    }
+
+    .content h1{
+        font-size: 2rem;
+    }
+
+    .sections{
+        width: 80vw;
+        height: auto;
+    }
+    
+    .cards{
+        height: 40vh;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cicon{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        width: 70%;
+    }
+
+    .cicon img{
+        width: 10rem;
+    }
+
+    .cdata{
+        height: 60%;
+        width: 70%;
+    }
+    
+    .cdata h2{
+        font-size: 1.2rem;
+        font-weight: lighter;
+        color: white;
+    }
+    
+    .cards2{
+        height: 110vh;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
