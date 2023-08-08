@@ -22,7 +22,7 @@
     $cicon = "http://openweathermap.org/img/wn/" . $cdata->weather[0]->icon . "@4x.png";
     $currentdate = $cdata->dt_txt;
     $cdate = $cdata->dt_txt;
-    $cdate = substr($cdate, 9, 1) + 1;
+    $cdate = substr($cdate, 8, 2) + 1;
 
     $counter = 0;
     $temp = array("0", "0", "0", "0");
